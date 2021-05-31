@@ -1,0 +1,23 @@
+.banner_wrapper {
+  height: calc(100vh - 70px);
+  width: 100%;
+  position: relative;
+}
+.banner_wrapper .info_project_wrapper {
+  position: absolute;
+  bottom: 0;
+  max-width: 400px;
+  width: 100%;
+  background: #111;
+  padding: 32px 96px 32px 64px;
+  grid-row: 2;
+  align-self: flex-start;
+}
+.banner_wrapper .info_project_wrapper .primary {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.banner_wrapper .info_project_wrapper .secundary {
+  font-size: 12px;
+  margin-top: 20px;
+}/*# sourceMappingURL=style.css.map */

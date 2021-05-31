@@ -1,0 +1,42 @@
+.player_wrapper {
+  height: 60px;
+  position: absolute;
+  bottom: -65px;
+  width: 100%;
+  border-bottom: 5px solid #e70000;
+  background-color: rgba(153, 153, 153, 0.062);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.player_wrapper .buttons {
+  height: inherit;
+  width: 70px;
+  border-right: 2px solid rgba(255, 255, 255, 0.205);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.player_wrapper .buttons i {
+  font-size: 12px;
+}
+.player_wrapper .music_info {
+  width: calc(100% - 210px );
+  padding-left: 30px;
+}
+.player_wrapper .music_info .duration {
+  color: rgba(255, 255, 255, 0.473);
+  font-size: 12px;
+}/*# sourceMappingURL=style.css.map */

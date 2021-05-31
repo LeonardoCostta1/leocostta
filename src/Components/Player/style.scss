@@ -1,0 +1,31 @@
+.player_wrapper {
+    height: 60px;
+    position: absolute;
+    bottom: -65px;
+    width: 100%;
+    border-bottom: 5px solid #e70000;
+    background-color: rgba(153, 153, 153, 0.062);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .buttons{
+        height: inherit;
+        width: 70px;
+        border-right: 2px solid rgba(255, 255, 255, 0.205);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i{
+            font-size: 12px;
+        }
+    }
+
+    .music_info{
+        width: calc(100% - 210px );
+        padding-left: 30px;
+        .duration{
+            color:rgba(255, 255, 255, 0.473);
+            font-size: 12px;
+        }
+    }
+}
