@@ -1,10 +1,10 @@
 .player_wrapper {
-  height: 60px;
+  height: 90px;
   position: absolute;
-  bottom: -65px;
+  bottom: -125px;
   width: 100%;
-  border-bottom: 5px solid #e70000;
-  background-color: rgba(153, 153, 153, 0.062);
+  border-bottom: 3px solid #fff;
+  background-color: #99999923;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,10 +15,11 @@
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
+
 .player_wrapper .buttons {
   height: inherit;
-  width: 70px;
-  border-right: 2px solid rgba(255, 255, 255, 0.205);
+  width: 90px;
+  border-right: 1px solid rgba(255, 255, 255, 0.205);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,14 +30,18 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
+
 .player_wrapper .buttons i {
   font-size: 12px;
 }
+
 .player_wrapper .music_info {
-  width: calc(100% - 210px );
+  width: calc(100% - 210px);
   padding-left: 30px;
 }
+
 .player_wrapper .music_info .duration {
   color: rgba(255, 255, 255, 0.473);
   font-size: 12px;
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */

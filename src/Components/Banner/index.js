@@ -1,17 +1,27 @@
-import React from 'react';
-import Player from '../Player';
-
-import'./style.css';
+import React from "react";
+import Player from "../Player";
+import foto from '../../Assets/img/foto.png'
+import "./style.css";
 
 function Banner() {
-  return <div className="banner_wrapper">
-<Player/>
+  return (
+    <div className="banner_wrapper">
+      <div className="banner_container">
+        <div className="banner_info_wrapper">
+          <div className="text_info">UNDERGROUND RENAISSANCE</div>
+          <div className="secundary">
+            Lorem ipsum dolor sit amet, cu sea suavitate intellegam, civibus
+            nominati ad usu. Purto probatus vel inid mei
+          </div>
+          <Player />
+        </div>
 
-<div className="info_project_wrapper">
-    <div className="primary">THE EVOLUTION OF OUR SOUNDS | ADE 2020</div>
-    <div className="secundary">For Amsterdam Dance Event 2020 we recorded a zoom call where me, David Guetta and Timbaland discussed the evolution of our sounds!</div>
-</div>
-  </div>;
+        <div className="foto_container">
+          <img src={foto}/>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Banner;

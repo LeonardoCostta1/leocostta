@@ -1,27 +1,54 @@
-.banner_wrapper{
-    height: calc(100vh - 70px);
-    width: 100%;
-    position: relative;
-    // background:linear-gradient(rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.89),),url(../../Assets/img/xix.svg);
-    
-    .info_project_wrapper{
+.banner_wrapper {
+  height: calc(100vh - 100px);
+  width: 100%;
+  position: relative;
+  background-size: contain;
+  border-bottom: 1px solid #333;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .banner_container {
+    width: 1440px;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .banner_info_wrapper {
+      width: 750px;
+      position: relative;
+      left: 0;
+      .text_info {
+        font-weight: bold;
+        font-size: 6rem;
+        line-height: 6rem;
+      }
+      .secundary {
+        width: 80%;
+        font-size: 22px;
+        font-weight: 300;
+        margin-top: 10px;
+      }
+    }
+
+    .foto_container {
+      position: relative;
+      height: calc(85vh - 70px);
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      display: none;
+
+      img {
         position: absolute;
         bottom: 0;
-        max-width: 400px;
-        width: 100%;
-        background: #111;
-        padding: 32px 96px 32px 64px;
-        grid-row: 2;
-        align-self: flex-start;
-        // margin-left: 50px;
-        .primary{
-            font-size: 2rem;
-            font-weight: bold;
-        }
-        .secundary{
-            font-size: 12px;
-            margin-top: 20px;
-        }
-
+        width: 85%;
+        opacity:.9;
+        filter:grayscale(1);
+        
+      }
     }
+  }
 }

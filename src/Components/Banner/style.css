@@ -1,23 +1,76 @@
 .banner_wrapper {
-  height: calc(100vh - 70px);
+  height: calc(100vh - 100px);
   width: 100%;
   position: relative;
+  background-size: contain;
+  border-bottom: 1px solid #333;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.banner_wrapper .info_project_wrapper {
+
+.banner_wrapper .banner_container {
+  width: 1440px;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.banner_wrapper .banner_container .banner_info_wrapper {
+  width: 750px;
+  position: relative;
+  left: 0;
+}
+
+.banner_wrapper .banner_container .banner_info_wrapper .text_info {
+  font-weight: bold;
+  font-size: 6rem;
+  line-height: 6rem;
+}
+
+.banner_wrapper .banner_container .banner_info_wrapper .secundary {
+  width: 80%;
+  font-size: 22px;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.banner_wrapper .banner_container .foto_container {
+  position: relative;
+  height: calc(85vh - 70px);
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+.banner_wrapper .banner_container .foto_container img {
   position: absolute;
   bottom: 0;
-  max-width: 400px;
-  width: 100%;
-  background: #111;
-  padding: 32px 96px 32px 64px;
-  grid-row: 2;
-  align-self: flex-start;
+  width: 85%;
+  opacity: .9;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
 }
-.banner_wrapper .info_project_wrapper .primary {
-  font-size: 2rem;
-  font-weight: bold;
-}
-.banner_wrapper .info_project_wrapper .secundary {
-  font-size: 12px;
-  margin-top: 20px;
-}/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
