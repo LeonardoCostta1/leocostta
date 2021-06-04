@@ -1,0 +1,28 @@
+.gallery_wrapper{
+    min-height: 50vh;
+    padding:50px 0 50px 0;
+    height: auto;
+    width: 100%;
+    // background: #000;
+    .gallery_container{
+        width: 1440px;
+        height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin:0 auto;
+        .box{
+            width: 285px;
+            height: 285px;
+            margin-right: 1px;
+            margin-bottom: 1px;
+            margin-top: 1px;
+            border: 1px solid #ffffff34;
+            transition: all ease-in-out .3s;
+            &:hover{
+                background: #111;
+            }
+        }
+    }
+}

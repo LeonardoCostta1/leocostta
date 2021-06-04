@@ -1,11 +1,15 @@
 import React from "react";
 import Player from "../Player";
-import foto from '../../Assets/img/foto.png'
+import foto from '../../Assets/img/26.png'
 import "./style.css";
-
+import bg from "../../Assets/video/bgmin.mp4";
 function Banner() {
   return (
     <div className="banner_wrapper">
+      <div className="overlay"></div>
+      <video id="background-video" loop autoPlay>
+        <source src={bg} type="video/mp4" />
+      </video>
       <div className="banner_container">
         <div className="banner_info_wrapper">
           <div className="text_info">UNDERGROUND RENAISSANCE</div>
@@ -17,7 +21,7 @@ function Banner() {
         </div>
 
         <div className="foto_container">
-          <img src={foto}/>
+          <img src={foto} alt="foto"/>
         </div>
       </div>
     </div>

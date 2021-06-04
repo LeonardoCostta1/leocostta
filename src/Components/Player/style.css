@@ -3,8 +3,8 @@
   position: absolute;
   bottom: -125px;
   width: 100%;
+  border: 1px solid #ffffff34;
   border-bottom: 3px solid #fff;
-  background-color: #99999923;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,7 +19,7 @@
 .player_wrapper .buttons {
   height: inherit;
   width: 90px;
-  border-right: 1px solid rgba(255, 255, 255, 0.205);
+  border-right: 1px solid #ffffff34;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,6 +29,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all ease-in-out .2s;
+  transition: all ease-in-out .2s;
+  cursor: pointer;
+}
+
+.player_wrapper .buttons:hover {
+  background: #F84AFB;
 }
 
 .player_wrapper .buttons i {
@@ -41,7 +48,7 @@
 }
 
 .player_wrapper .music_info .duration {
-  color: rgba(255, 255, 255, 0.473);
+  color: #ffffff79;
   font-size: 12px;
 }
 /*# sourceMappingURL=style.css.map */

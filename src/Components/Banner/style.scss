@@ -1,24 +1,47 @@
 .banner_wrapper {
-  height: calc(100vh - 100px);
+  height: calc(95vh - 125px);
   width: 100%;
   position: relative;
   background-size: contain;
-  border-bottom: 1px solid #333;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  .overlay {
+    height: 100vh;
+    width: 100%;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(0, 0, 0, 0)),
+        color-stop(110%, #000)
+      ),
+      url(../../Assets/img/malha2.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), #000 80%),
+      url(../../Assets/img/malha2.png);
+    position: absolute;
+    z-index: 1;
+  }
+  #background-video {
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    display: none;
+  }
   .banner_container {
     width: 1440px;
     height: inherit;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    z-index: 1000;
     .banner_info_wrapper {
       width: 750px;
       position: relative;
       left: 0;
+      top:-50px;
       .text_info {
         font-weight: bold;
         font-size: 6rem;
@@ -29,25 +52,23 @@
         font-size: 22px;
         font-weight: 300;
         margin-top: 10px;
+        color: #999;
       }
     }
-
     .foto_container {
       position: relative;
-      height: calc(85vh - 70px);
+      height: calc(100vh - 180px);
       width: 50%;
       display: flex;
       align-items: center;
-      justify-content: center;
-      display: none;
-
+      justify-content: flex-end;
+      // display: none;
       img {
         position: absolute;
         bottom: 0;
-        width: 85%;
-        opacity:.9;
-        filter:grayscale(1);
-        
+        width: 98%;
+        opacity: 0.9;
+        // filter:grayscale(1);
       }
     }
   }
